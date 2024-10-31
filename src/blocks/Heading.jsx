@@ -30,8 +30,8 @@ function Heading() {
     const [isClicked, setIsClicked] = useState(false);
     return (
         <header
-            className={setBackground("image-hero") + " bg-cover bg-no-repeat p-5 md:px-32"}
-            style={{}}
+            className={"bg-[image:var(--mobile-bg)] sm:bg-[image:var(--desktop-bg)] bg-cover bg-no-repeat p-5 md:px-32"}
+            style={setBackground('image-hero')}
         >
             <nav
                 className={`${

@@ -3,10 +3,10 @@ import setBackground from "../utils/setBackground"
 
 function Creation({name, bg}) {
     return (
-        <div className={
-            setBackground(bg) + 
-            " bg-cover h-40 sm:h-[32rem] group text-white font-bold uppercase font-fontJosefin text-2xl relative"
-        }>
+        <div 
+            className="bg-[image:var(--mobile-bg)] sm:bg-[image:var(--desktop-bg)] bg-cover h-40 sm:h-[32rem] group text-white font-bold uppercase font-fontJosefin text-2xl relative"
+            style={setBackground(bg)}
+        >
             <span className="absolute group-hover:text-black z-40 bottom-5 w-5/12 sm:w-1/2 left-5   ">
                 {name}
             </span>
